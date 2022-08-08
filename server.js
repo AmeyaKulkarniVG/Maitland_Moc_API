@@ -123,6 +123,16 @@ app.put("/postRoleGroup/:id", function (req, res) {
   res.status(200).send({ id: 1 });
 });
 
+app.post("/saveGroup", function (req, res) {
+  console.log("/saveGroup");
+  res.status(200).send({ id: 1 });
+});
+
+app.put("/saveGroup/:id", function (req, res) {
+  console.log("/saveGroup");
+  res.status(200).send({ id: 1 });
+});
+
 app.listen(7000, () => {
   console.log("Server started at 7000");
 });
